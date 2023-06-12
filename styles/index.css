@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 95%;
+  margin: auto;
+}
+
+.btn {
+  all: unset;
+  padding-block: 10px;
+  padding-inline: 2.5vw;
+  cursor: pointer;
+  font-weight: 700;
+  border-width: 3px;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.btn.btn-primary {
+  background-color: #fe7401;
+  color: white;
+  border-color: #fe7401;
+}
+.btn.btn-dark {
+  background-color: #504026;
+  color: white;
+  border-color: #504026;
+}
+.btn.btn-outline-dark {
+  background-color: white;
+  color: #504026;
+  border-color: #504026;
+}
+.btn.btn-outline-primary {
+  background-color: white;
+  color: #fe7401;
+  border-color: #fe7401;
+}
+
+.app-header {
+  height: 90vh;
+  background: url("/image/hero.png");
+  background-size: cover;
+  background-position: center;
+}
+.app-header .overlay {
+  background: rgba(0, 0, 0, 0.25);
+  mix-blend-mode: normal;
+  height: 100%;
+}
+.app-header-nav {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.app-header-nav ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  gap: 6.125rem;
+}
+.app-header-nav ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.app-header-nav .logo img {
+  width: 100%;
+  max-width: 3rem;
+}

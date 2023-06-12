@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+$primary: #fe7401;
+$dark: #504026;
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 95%;
+  margin: auto;
+}
+
+// BUTTON STYLE START
+.btn {
+  all: unset;
+  padding-block: 10px;
+  padding-inline: 2.5vw;
+  cursor: pointer;
+  font-weight: 700;
+  border-width: 3px;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  &.btn-primary {
+    background-color: $primary;
+    color: white;
+    border-color: $primary;
+  }
+
+  &.btn-dark {
+    background-color: $dark;
+    color: white;
+    border-color: $dark;
+  }
+
+  &.btn-outline-dark {
+    background-color: white;
+    color: $dark;
+    border-color: $dark;
+  }
+  &.btn-outline-primary {
+    background-color: white;
+    color: $primary;
+    border-color: $primary;
+  }
+}
+// BUTTON STYLE END
+
+// HEADER SECTION START
+.app-header {
+  height: 90vh;
+  background: url("/image/hero.png");
+  background-size: cover;
+  background-position: center;
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.25);
+    mix-blend-mode: normal;
+    height: 100%;
+  }
+
+  &-nav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+
+    ul {
+      margin: 0;
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+      gap: 6.125rem;
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+      }
+    }
+
+    .logo {
+      img {
+        width: 100%;
+        max-width: 3rem;
+      }
+    }
+  }
+}
+// HEADER SECTION END
